@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../images/logo1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food website | Food Menu</title>
+</head>
+
+<body>
+    <!--Header for laptop (start)-->
+    <header>
+        <div class="header">
+
+            <!--Sign up/Sign in Form-->
+            <div class="sign">
+                <div class="sign-box">
+                    <div class="bar">
+                        <i class="fa-solid fa-xmark" id="x-sign-mb"></i>
+                    </div>
+                    <!-- sign up form  -->
+                    <div class="signup">
+                        <h3>Sign Up</h3>
+                        <form action="#">
+                            <label for="fullname">Enter Full Name</label></br>
+                            <input type="text" placeholder="Full Name" name="fullname" id=""></br>
+                            <label for="email">Enter E-mail</label></br>
+                            <input type="email" placeholder="E-mail" name="email" id=""></br>
+                            <label for="password">Create Password</label></br>
+                            <input type="password" placeholder="Password" name="password" id=""></br>
+                            <label for="copassword">Confirm Password</label></br>
+                            <input type="password" placeholder="Confirm Password" name="copassword" id=""></br>
+                            <input type="submit" value="Sign Up">
+                            <p id="to-signin">Already have an account? Sign In</p>
+                        </form>
+                    </div>
+                    <!-- sign in form  -->
+                    <div class="signin">
+                        <h3>Sign In</h3>
+                        <form action="#">
+                            <label for="email2">Enter Your E-mail:</label>
+                            <input type="email" placeholder="E-mail" name="email2" id="">
+                            <label for="password2">Enter Password: </label>
+                            <input type="password" placeholder="Password" name="password2" id="">
+                            <input type="submit" value="Sign In">
+                        </form>
+                        <p>Forgot Password?</p>
+                        <p id="to-signup">Don't have an account? Sign Up</p>
+                    </div>
+                </div>
+            </div>
+            <!--Hidden Header for Mobile/Tablet (start)-->
+            <div class="headerbar">
+                <div class="account">
+                    <ul>
+                        <a href="./index.html">
+                            <li><i class="fa-solid fa-house-chimney"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa-solid fa-magnifying-glass searchicon" id="searchicon1"></i></li>
+                        </a>
+                        <div class="search" id="searchinput1">
+                            <input type="search" name="" id="">
+                            <i class="fa-solid fa-magnifying-glass srchicon"></i>
+                        </div>
+                        <a href="#">
+                            <li><i class="fa-solid fa-user" id="user-mb"></i></li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <a href="./index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="./About.html">
+                            <li>About</li>
+                        </a>
+                        <a href="./menu.html">
+                            <li>Food Menu</li>
+                        </a>
+                        <a href="./book.html">
+                            <li>Book table</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <!--Hidden Header for Mobile/Tablet (end)-->
+            <div class="logo">
+                <img src="../images/templogo4.png" alt="logo">
+            </div>
+            <!--Bar/cross in header for mobile/tablet (start)-->
+            <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="hdcross"></i>
+            </div>
+            <!--Bar/cross in header for mobile/tablet (end)-->
+            <div class="nav">
+                <ul>
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./About.html">
+                        <li>About</li>
+                    </a>
+                    <a href="./menu.html">
+                        <li>Food Menu</li>
+                    </a>
+                    <a href="./book.html">
+                        <li>Book table</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="account">
+                <ul>
+                    <a href="./index.html">
+                        <li><i class="fa-solid fa-house-chimney"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fa-solid fa-magnifying-glass searchicon" id="searchicon2"></i></li>
+                    </a>
+                    <div class="search" id="searchinput2">
+                        <input type="search" name="" id="">
+                        <i class="fa-solid fa-magnifying-glass srchicon"></i>
+                    </div>
+                    <a href="#">
+                        <li><i class="fa-solid fa-user" id="user-lap"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--Header for laptop (end)-->
+
+    <div class="menu">
+        <div class="menu1">
+            <div>
+                <h1>Food Menu</h1>
+            </div>
+            <div class="fav-head">
+                <!-- Add your all food items  -->
+                <div class="fav-food">
+                    <div class="item">
+                        <div>
+                            <img src="../images/food1.jpg" alt="Food item">
+                        </div>
+                        <h3>Daulat ki Chaat</h3>
+                        <p>A light and airy whipped cream-like dessert made with milk, sugar, and a special thickening agent</p>
+                        <p class="fav-price">Rs 300</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="../images/food2.jpg" alt="Food item">
+                        </div>
+                        <h3>Yuzu Kosho Udon</h3>
+                        <p>Thick wheat noodles (udon) served in a vibrant broth flavored with yuzu and kosho.</p>
+                        <p class="fav-price">Rs 250</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="../images/food3.jpg" alt="Food item">
+                        </div>
+                        <h3>Black Garlic Bliss</h3>
+                        <p>Momos featuring a unique filling with black garlic and mushrooms. Dipped in white sauce.</p>
+                        <p class="fav-price">Rs 180</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="../images/food4.jpg" alt="Food item">
+                        </div>
+                        <h3>Murgh Biryani</h3>
+                        <p> Highlighting the use of saffron, a prized spice known for its delicate aroma and vibrant color </p>
+                        <p class="fav-price">Rs 400</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="../images/food3.jpg" alt="Food item">
+                        </div>
+                        <h3>Wasabi Salmon </h3>
+                        <p>Delicate momos filled with smoked salmon and a subtle wasabi cream and a touch of spices.</p>
+                        <p class="fav-price">Rs 150</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="../images/food4.jpg" alt="Food item">
+                        </div>
+                        <h3>Rogan Josh Biryani</h3>
+                        <p>"Rogan Josh," a rich lamb stew, indicating the biryani incorporates elements of this flavorful dish. </p>
+                        <p class="fav-price">Rs 350</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="../images/food2.jpg" alt="Food item">
+                        </div>
+                        <h3>Udon Carbonara</h3>
+                        <p>Thick wheat noodles (udon)in a creamy sauce made with egg yolk, parmesan cheese, and pancetta</p>
+                        <p class="fav-price">Rs 220</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="../images/food1.jpg" alt="Food item">
+                        </div>
+                        <h3>Meen Moilee</h3>
+                        <p>white fish simmered in a fragrant coconut milk sauce flavored with curry leaves, ginger, and chilies </p>
+                        <p class="fav-price">Rs 250</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="../images/food2.jpg" alt="Food item">
+                        </div>
+                        <h3>Spicy Dan Noodles </h3>
+                        <p>Thin wheat noodles tossed in a fiery sauce made with chili oil, peanut butter, sesame paste.</p>
+                        <p class="fav-price">Rs 240</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="../images/food4.jpg" alt="Food item">
+                        </div>
+                        <h3>Dum Gosht Biryani</h3>
+                        <p> "Dum"-the sealed pot cooking, and "Gosht"-the lamb, creating a tender and flavorful biryani. </p>
+                        <p class="fav-price">Rs 330</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="../images/food1.jpg" alt="Food item">
+                        </div>
+                        <h3>Nargisi Kofta</h3>
+                        <p>The dumplings with filling of spiced minced meat or vegetables encasing a whole boiled egg. </p>
+                        <p class="fav-price">Rs 400</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="../images/food3.jpg" alt="Food item">
+                        </div>
+                        <h3>Balsamic Truffle</h3>
+                        <p>Momos filled with a luxurious goat cheese and truffle oil mixture, drizzled with balsamic glaze. </p>
+                        <p class="fav-price">Rs 200</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer-1">
+            <div class="logo">
+                <img src="../images/templogo4.png" alt="logo">
+            </div>
+            <div>
+                <address>
+                        <p>Email: ayushjana543@gmail.com</p>
+                        <p>YouTube:Michelin</p>
+                        <p>Mr Ayush Jana 343,</br>Bhubaneswar, Odisha,</br> India 751024.</p>
+                    </address>
+            </div>
+        </div>
+        <div class="footer-2">
+            <img src="../images/msymbol.png" alt="">
+            <h2>Powered by <em>Michelin</em></h2>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
